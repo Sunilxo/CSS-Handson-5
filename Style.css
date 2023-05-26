@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+:root {
+  --textcolor: rgb(244, 244, 244);
+  --black:rgba(0, 0, 0, 0.868);
+}
+
+body {
+  background-image: url("background image.jpg");
+  background-size: cover; 
+  color: var(--textcolor);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding-right:100px;
+  padding-left:100px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textcolor);
+}
+
+.navbar {
+  grid-area: 1 / 1 / 2 / 4;
+  background: transparent;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  z-index: 1;
+}
+
+.navbar .nav-options ul:hover {
+  color: orange;
+}
+
+.logo-image {
+  width: 6vw;
+  height: auto;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-options ul li {
+  display: inline;
+  margin: 0px 20px;
+  padding: 0px 10px;
+}
+
+.menu-image {
+  width: 3vw;
+}
+
+.The-sahara {
+  grid-area: 2 / 1 / 5 / 2;
+  padding-top: 100px;
+  transition: 0.2s;
+}
+
+.The-sahara h1 {
+  font-size: 52px;
+}
+
+.The-sahara p {
+    margin: 2vh;
+    margin-left: 0;
+}
+
+.button {
+  width: 150px;
+  padding: 8px;
+  background: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: rgb(55, 55, 55);
+  transition: ease 0.2s;
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--textcolor);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+}
+
+.area {
+  width: 170px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+  color: var(--textcolor);
+  padding: 20px;
+  transition: 0.2s ease;
+}
+
+.area p {
+  padding-top: 10px;
+  font-size: 5px;
+  color: white;
+}
+
+.area:hover {
+  translate: 0px -5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.western-desert {
+  background-image: url("pic-1.png");
+}
+
+.southern {
+  background-image: url("pic-2.png");
+}
+
+.northern-pyramid {
+  background-image: url("pic-3.png");
+}
+
+.eastern-desert {
+  background-image: url("pic-4.png");
+}
+
+@media screen and (max-width: 860px) {
+body{
+  padding-inline: 0px ;
+  }
+
+.navbar{
+  padding-inline: 20px;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  }
+.logo-image{
+  margin-left: 11vw;
+  margin-bottom: -22vh;
+  }
+
+.The-sahara {
+  grid-column: 1 / span 3;
+  color: var(--white);
+  margin-left: 15vw;
+  margin-bottom: 40px;
+  font-family:Arial, Helvetica, sans-serif
+  }
+
+.western-desert {
+  background-image: url("pic-1.png");
+  }
+
+.bagawat{
+  background-image: url('pic-2.png');
+  }
+
+.area {
+  grid-column: 2 / 3;
+  width: 70vh;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  color: var(--textcolor);
+  padding: 50px 0px;
+  text-align: center;
+  margin-left: 15vh;
+  margin-right: 15vh;
+}
+
+}
+@media screen and (max-width:420px){
+.nav-options ul li{
+margin:0px 5px;
+}
+
+}
