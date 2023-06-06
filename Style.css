@@ -5,7 +5,7 @@
 }
 body
 {
-    background-image: url(./shara desert.jpg);
+    background-image: url(./shara\ desert.jpg);
     background-repeat: repeat;
 }
 .navbar
@@ -70,7 +70,6 @@ button
 {
     height: 250px;
     width: 250px;
-    /* border: 1px solid black; */
     border-radius: 10px;
     cursor: pointer;
 }
@@ -176,21 +175,18 @@ button
 }
 .flex-container
 {
-    /* width: 600px; */
     gap: 20px;
     position: relative;
     top: 20px;
     left: 200px;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap;
-    justify-content: space-around; */
+   
 }
 .flex-item
 {
     height: 300px;
     width: 500px;
-    /* border: 1px solid black; */
     border-radius: 10px;
     cursor: pointer;
 }
@@ -301,21 +297,17 @@ button
 }
 .flex-container
 {
-    /* width: 600px; */
     gap: 20px;
     position: relative;
     top: 20px;
     left: 120px;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap;
-    justify-content: space-around; */
 }
 .flex-item
 {
     height: 250px;
     width: 250px;
-    /* border: 1px solid black; */
     border-radius: 10px;
     cursor: pointer;
 }
