@@ -1,189 +1,380 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Roboto Slab", serif;
+*
+{
+    margin: 0;
+    padding: 0;
 }
-
-:root {
-  --textcolor: rgb(244, 244, 244);
-  --black:rgba(0, 0, 0, 0.868);
+body
+{
+    background-image: url(./shara desert.jpg);
+    background-repeat: repeat;
 }
-
-body {
-  background-image: url("background image.jpg");
-  background-size: cover; 
-  color: var(--textcolor);
-  display: grid;
-  gap: 20px;
-  grid-template-columns: auto auto auto;
-  padding-right:100px;
-  padding-left:100px;
+.navbar
+{
+    margin-top: 20px;
+    margin-left: 60%;
 }
-
-a {
-  text-decoration: none;
-  color: var(--textcolor);
+.nav1
+{
+    color: white;
+    display: inline-block;
+    margin-left: 30px;
+    cursor: pointer;
 }
-
-.navbar {
-  grid-area: 1 / 1 / 2 / 4;
-  background: transparent;
-  padding: 15px 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 0px;
-  z-index: 1;
+.logo
+{
+    width: 50px;
+    margin-left: 100px;
 }
-
-.navbar .nav-options ul:hover {
-  color: orange;
+.para
+{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 250px;
+    margin-left: 150px;
+    cursor: pointer;
 }
-
-.logo-image {
-  width: 6vw;
-  height: auto;
+.para1
+{
+    color: white;
+    padding-left: 150px;
+    margin: 10px;
+    cursor: text;
 }
-
-.nav-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+button
+{
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 10px;
+    height: 40px;
+    width: 180px;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: 20px;
+    cursor: pointer;
 }
-
-.nav-options ul li {
-  display: inline;
-  margin: 0px 20px;
-  padding: 0px 10px;
+.flex-container
+{
+    width: 600px;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
-.menu-image {
-  width: 3vw;
+.flex-item
+{
+    height: 250px;
+    width: 250px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    cursor: pointer;
 }
-
-.The-sahara {
-  grid-area: 2 / 1 / 5 / 2;
-  padding-top: 100px;
-  transition: 0.2s;
+.item1
+{
+    background-image: url(pic-1.png);
+    background-size: 250px;
 }
-
-.The-sahara h1 {
-  font-size: 52px;
+.item2
+{
+    background-image: url(pic-2.png);
+    background-size: 250px;
 }
-
-.The-sahara p {
-    margin: 2vh;
-    margin-left: 0;
+.item3
+{
+    background-image: url(pic-3.png);
+    background-size: 250px;
 }
-
-.button {
-  width: 150px;
-  padding: 8px;
-  background: white;
-  border: 2px solid white;
-  border-radius: 20px;
-  color: rgb(55, 55, 55);
-  transition: ease 0.2s;
+.item4
+{
+    background-image: url(pic-4.png);
+    background-size: 250px;
 }
-
-.button:hover {
-  background: transparent;
-  color: var(--textcolor);
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 5px black;
-  color: white;
+.desert
+{
+    color: white;
+    margin-top: 15px;
+    margin-left: 20px;
 }
-
-.area {
-  width: 170px;
-  height: 180px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 15px;
-  color: var(--textcolor);
-  padding: 20px;
-  transition: 0.2s ease;
+.para2
+{
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 10px;
 }
-
-.area p {
-  padding-top: 10px;
-  font-size: 5px;
-  color: white;
+.item1:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
 }
-
-.area:hover {
-  translate: 0px -5px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+.item2:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
 }
-
-.western-desert {
-  background-image: url("pic-1.png");
+.item3:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
 }
-
-.southern {
-  background-image: url("pic-2.png");
+.item4:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
 }
-
-.northern-pyramid {
-  background-image: url("pic-3.png");
+@media only screen and (min-width:850px) and (max-width:900px) {
+    .navbar{
+        margin-top: 10px;
+        margin-left: 30%;
+    }
+    .nav1
+    {
+        color: white;
+        display: inline-block;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    .para
+{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 50px;
+    cursor: pointer;
 }
-
-.eastern-desert {
-  background-image: url("pic-4.png");
+.para1
+{
+    color: white;
+    padding-left: 50px;
+    margin: 10px;
+    cursor: text;
 }
-
-@media screen and (max-width: 860px) {
-body{
-  padding-inline: 0px ;
-  }
-
-.navbar{
-  padding-inline: 20px;
-  backdrop-filter: blur(10px);
-  z-index: 2;
-  }
-.logo-image{
-  margin-left: 11vw;
-  margin-bottom: -22vh;
-  }
-
-.The-sahara {
-  grid-column: 1 / span 3;
-  color: var(--white);
-  margin-left: 15vw;
-  margin-bottom: 40px;
-  font-family:Arial, Helvetica, sans-serif
-  }
-
-.western-desert {
-  background-image: url("pic-1.png");
-  }
-
-.bagawat{
-  background-image: url('pic-2.png');
-  }
-
-.area {
-  grid-column: 2 / 3;
-  width: 70vh;
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  color: var(--textcolor);
-  padding: 50px 0px;
-  text-align: center;
-  margin-left: 15vh;
-  margin-right: 15vh;
+button
+{
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 10px;
+    height: 40px;
+    width: 180px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 20px;
+    cursor: pointer;
 }
-
+.flex-container
+{
+    /* width: 600px; */
+    gap: 20px;
+    position: relative;
+    top: 20px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap;
+    justify-content: space-around; */
 }
-@media screen and (max-width:420px){
-.nav-options ul li{
-margin:0px 5px;
+.flex-item
+{
+    height: 300px;
+    width: 500px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    cursor: pointer;
 }
-
+.item1
+{
+    background-image: url(pic-1.png);
+    background-size: 500px;
+}
+.item2
+{
+    background-image: url(pic-2.png);
+    background-size: 500px;
+}
+.item3
+{
+    background-image: url(pic-3.png);
+    background-size: 500px;
+}
+.item4
+{
+    background-image: url(pic-4.png);
+    background-size: 500px;
+}
+.desert
+{
+    color: white;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.para2
+{
+    display: inline;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    font-size: 10px;
+}
+.para3
+{
+    margin-left: 20px;
+}
+.item1:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
+}
+.item2:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
+}
+.item3:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
+}
+.item4:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
+}
+}
+@media only screen and (min-width:360px) and (max-width:849px) {
+    .navbar{
+        margin-top: 10px;
+        margin-left: 20%;
+    }
+    .nav1
+    {
+        color: white;
+        /* display: inline-block; */
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    .para{
+        color: white;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+    }
+    .para1
+{
+    color: white;
+    padding-left: 50px;
+    margin: 10px;
+    cursor: text;
+}
+button
+{
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 10px;
+    height: 40px;
+    width: 180px;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.flex-container
+{
+    /* width: 600px; */
+    gap: 20px;
+    position: relative;
+    top: 20px;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap;
+    justify-content: space-around; */
+}
+.flex-item
+{
+    height: 250px;
+    width: 250px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+.item1
+{
+    background-image: url(pic-1.png);
+    background-size: 250px;
+}
+.item2
+{
+    background-image: url(pic-2.png);
+    background-size: 250px;
+}
+.item3
+{
+    background-image: url(pic-3.png);
+    background-size: 250px;
+}
+.item4
+{
+    background-image: url(pic-4.png);
+    background-size: 250px;
+}
+.desert
+{
+    color: white;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.para2
+{
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+.item1:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
+}
+.item2:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
+}
+.item3:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
+}
+.item4:hover
+{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px black;
+}
 }
